@@ -27,10 +27,12 @@ h2 {
     color: rgb(83, 83, 83);
 }
 figure img {
-
-    border-width: 10px;
+    border-radius: 50%;
+    border: 10px;
 }
-
+img {
+    border: 10px;
+}
 
 
 
