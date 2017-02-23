@@ -38,8 +38,9 @@ figure img {
 
 
 
+
 .moderator {
-    padding: 30px;
+    padding: 40px;
     border-bottom: groove 2px;
     font-size: 80%;
 }
@@ -73,38 +74,50 @@ figure img {
 }
  
  
-.container .moderator .info {
-    position: absolute;
-    background-color: white;
+ 
+ 
+
+ .tooltip {
+    position: relative;
+    display: inline-block;
+    top: -100px;
+    left: -35px;
+    border: 1px solid rgb(146, 138, 125);
+    border-radius: 50%;
     width: 30px;
     height: 30px;
-    border-radius: 50%;
-    border: rgb(83, 83, 83) solid 1px;
-    margin-left: 45%;
-    margin-top: -10%;
+    background: white;
 }
-.container .moderator .info .text {
+
+.tooltip .tooltiptext {
     visibility: hidden;
     width: 300px;
     background-color: white;
-    border: rgb(83, 83, 83);
-    border-radius: 6px;
-    padding: 5px 0;
+    color: rgb(94, 88, 80);
+    text-align: left;
+    border: 1px solid rgb(146, 138, 125);
+    border-radius: 5px;
+    padding: 5px 10px;
     position: absolute;
     z-index: 1;
-    top: -5px;
+    top: -40px;
     left: 110%;
- }
-.container .moderator .info .text: :after {
-     content: " ";
-     position: absolute;
-     top: 50%;
-     right: 100%;
-     margin-top: -5px;
-     border-width: 5px;
-     border-style: solid;
-     border-color: transparent black transparent transparent;
- }
-.container .moderator .info:hover .container .moderator .info .text {
-     visibility: visible;
- }
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    margin-top: -10px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent white transparent transparent;
+}
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+figure .ua img {
+    width: 15px;
+    border: none;
+}
