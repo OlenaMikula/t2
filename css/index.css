@@ -38,41 +38,51 @@ figure img {
 
 
 
-
 .moderator {
-    padding: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    
     border-bottom: groove 2px;
     font-size: 80%;
 }
 .moderator img {
-    width: 11%;
+    width: 155px;
 }
-
-
 
 
 .spiker {
     padding-top: 20px;
-    padding-left: 10%;
+    padding-left: 70px;
     
 }
 .spiker .all {
     padding: 10px;
     float: left;
-    width: 16%;
+    width: 200px;
     border-right: groove 2px;
     font-size: 80%;
 }
+
+
 .spiker img {
-    width: 73%;
+    width: 155px;
 }
 .spiker .last {
     padding: 10px;
     float: left;
-    width: 16%;
+    width: 200px;
     font-size: 80%;
 }
- 
+ @media (max-width:992px) {
+    .spiker .all {
+        float: none;
+        border-right: none;
+    }
+    .moderator {
+        border-bottom: none;
+        
+    }
+}
  
  
  
@@ -80,13 +90,14 @@ figure img {
  .tooltip {
     position: relative;
     display: inline-block;
-    top: -100px;
-    left: -35px;
+    top: -130px;
+    left: -40px;
     border: 1px solid rgb(146, 138, 125);
     border-radius: 50%;
-    width: 30px;
-    height: 30px;
+    width: 33px;
+    height: 33px;
     background: white;
+    
 }
 
 .tooltip .tooltiptext {
