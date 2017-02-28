@@ -7,7 +7,7 @@ ruby, section, summary, time, mark, audio, video {
     margin: 0;
     padding: 0;
     border: 0;
-    font-size: 100%:
+    font-size: 100%;
     font: inherit;
     vertical-align: baseline;
 }
@@ -17,8 +17,8 @@ body {
     font: 14px/24px Arial, Tahoma, sans-serif;
     text-align: center;
     font-family: sans-serif;
-    margin-left: 70px;
-    margin-right: 70px;
+    
+    
 }
 h1 {
     color: rgb(66, 115, 182);
@@ -30,30 +30,47 @@ figure img {
     border-radius: 50%;
     border-left: 3px solid  rgb(7,60,133);
     border-right: 3px solid rgb(193, 92, 3);
+    
 }
-
-
 
 
 
 
 
 .moderator {
+    position: absolute;
     padding-top: 40px;
     padding-bottom: 40px;
-    
-    border-bottom: groove 2px;
-    font-size: 80%;
+    margin-left: 505px;
+    font-size: 220%;
+    line-height: 1.2;
 }
 .moderator img {
+    margin-left: 38px;
     width: 155px;
+}
+.moderator h1 {
+    margin-top: 10px;
+}
+.moderator h2 {
+    
+    font-size: 80%;
 }
 
 
 .spiker {
-    padding-top: 20px;
+    width: 1130px;
+    padding-top: 300px;
     padding-left: 70px;
+    font-size: 250%;
+    line-height: 1.2;
+}
+.spiker h1 {
+    margin-top: -23px;
+}
+.spiker h2 {
     
+    font-size: 80%;
 }
 .spiker .all {
     padding: 10px;
@@ -79,19 +96,25 @@ figure img {
         border-right: none;
     }
     .moderator {
-        border-bottom: none;
+        margin-left: 65px;
         
+    }
+    hr {
+        display: none;
     }
 }
  
  
  
-
+.moderator .tooltip {
+    top: -127px;
+    left: -45px;
+}
  .tooltip {
     position: relative;
     display: inline-block;
-    top: -130px;
-    left: -40px;
+    top: -160px;
+    left: 60px;
     border: 1px solid rgb(146, 138, 125);
     border-radius: 50%;
     width: 33px;
@@ -102,7 +125,7 @@ figure img {
 
 .tooltip .tooltiptext {
     visibility: hidden;
-    width: 300px;
+    width: 280px;
     background-color: white;
     color: rgb(94, 88, 80);
     text-align: left;
@@ -113,6 +136,11 @@ figure img {
     z-index: 1;
     top: -40px;
     left: 110%;
+    font-size: 60%
+}
+.tooltip .tooltiptext h1 {
+   font-size: 120%;
+    
 }
 
 .tooltip .tooltiptext::after {
